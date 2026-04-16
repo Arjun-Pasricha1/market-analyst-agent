@@ -1,0 +1,45 @@
+fastapi
+'''
+Why: It is the high-performance framework we’ll use to turn your AI logic into a professional web API.
+Use Case: It handles the "entry point" where users send their stock market queries.
+'''
+uvicorn
+'''
+Why: It is the "lightning-fast" server implementation that actually runs your FastAPI code.
+Use Case: Without this, your FastAPI code is just a script; with its website/service.
+'''
+langgraph
+'''
+Why: This is the most important library; it manages the "State" and the flow of logic between your agents.
+Use Case: It allows us to create loops where an agent can "think," "act," and then "evaluate" its own work.
+'''
+langchain-aws
+'''
+Why: This provides the specific integration to connect your agents to AWS Bedrock.
+Use Case: It allows you to swap between different models (like Claude or Llama) running on AWS infrastructure with one line of code
+'''
+langchain-community
+'''
+Why: A collection of third-party integrations (like search engines or calculators) contributed by the developer community.
+Use Case: We’ll use this to give your agents "pre-built hands" to search the web or scrape data.
+'''
+python-dotenv
+'''
+Why: It reads your .env file and loads your secret API keys into the computers memory safely.
+Use Case: It keeps your AWS keys and database passwords out of your GitHub commits.
+'''
+sqlalchemy
+'''
+Why: It is an Object-Relational Mapper (ORM) that lets you talk to your database using Python code instead of raw SQL strings.
+Use Case: We will use it in core/database.py to manage your stock price tables.
+'''
+psycopg2-binary 
+'''
+Why: This is the specific "translator" or driver that allows Python to communicate with a PostgreSQL database.
+Use Case: It works behind the scenes under SQLAlchemy to handle the actual connection to your DB.
+'''
+pydantic
+'''
+Why: It is used for data validation, ensuring that whatever data enters your system matches the exact format you expect.
+Use Case: We will use it in schemas/ to define exactly what a Market Report should look like.
+'''
