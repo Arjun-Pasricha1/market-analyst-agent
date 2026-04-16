@@ -1,0 +1,27 @@
+# Environment & Secrets
+.env
+.venv/
+env/
+venv/
+
+# uv specific
+uv.lock
+.uv/
+
+# Python / IDE
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Project Specific
+*.log
+data/*.csv
+data/*.json
+!data/.gitkeep
